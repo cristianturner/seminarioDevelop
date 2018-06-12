@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "273030109925",
+    "firebase_url": "https://seminariodevelop.firebaseio.com",
+    "project_id": "seminariodevelop",
+    "storage_bucket": "seminariodevelop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273030109925:android:ff1b7fc35528005d",
+        "android_client_info": {
+          "package_name": "com.example.seminario.seminariodevelop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273030109925-1of7ji0p99a22j0mp0oen95orkuefam9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.seminario.seminariodevelop",
+            "certificate_hash": "cc143af3f21420e8c390ac564693069cb93d06e9"
+          }
+        },
+        {
+          "client_id": "273030109925-9b4h7fcbnbibu4j46vdg9mvj12so2pm8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "273030109925-9b4h7fcbnbibu4j46vdg9mvj12so2pm8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAc_VArm46J1twFYKmkT9d-8MRHRuLGYOs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273030109925-9b4h7fcbnbibu4j46vdg9mvj12so2pm8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

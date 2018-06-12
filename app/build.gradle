@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.seminario.seminariodevelop"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java', 'apt_generated']
+            aidl.srcDirs = ['src/main.aidl', 'apt_generated']
+            assets.srcDirs = ['src/main/assets']
+            res.srcDirs =
+                    [
+                            //MOBILE PHONE LAYOUTS
+                            'src/main/res/layout/Auth',
+                            'src/main/res/layout/MainHome',
+                            'src/main/res/layout/res',
+                            //10 Inch+ TABLET LAYOUTS
+                            'src/main/res/layout-xlarge',
+                            'src/main/res/layout-xlarge/Auth',
+                            'src/main/res/layout-xlarge/MainHome',
+                            'src/main/res/layout-xlarge/res',
+                            //7 Inch+ TABLET LAYOUTS
+                            'src/main/res/layout-large',
+                            'src/main/res/layout-large/Auth',
+                            'src/main/res/layout-large/MainHome',
+                            'src/main/res/layout-large/res',
+                            'src/main/res/layout',
+                            'src/main/res'
+                    ]
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'//
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.1'
+    implementation 'com.google.firebase:firebase-auth:11.6.0'
+    implementation 'com.google.android.gms:play-services-auth:11.6.0'
+    implementation 'junit:junit:4.12'
+    implementation 'com.android.support.test:runner:1.0.2'
+    implementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'com.android.support:cardview-v7:27.1.1'
+}
+
+//apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'com.google.gms.google-services'
